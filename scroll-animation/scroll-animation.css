@@ -1,0 +1,49 @@
+*{
+    width: 100%;
+    height: 100%;
+   margin: 0;
+   padding: 0;
+}
+html body{
+    display: flex;
+    background-color: #adff2f;
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.container {
+    display: flex;
+    height: 3cm;
+    width: 2cm;
+    justify-content: center;
+    align-items: center;
+    border: solid #ffffff;
+    border-radius: 50px 50px 50px 50px / 30px 30px 30px 30px;
+}
+
+.bullet {
+    height: 0.3cm;
+    width: 0.3cm;
+    background-color: #ffffff;
+    border-radius: 50%;
+    position: relative;
+    animation: slide 2s ease-in-out infinite, transparente 2s ease-in-out infinite
+}
+@keyframes slide {
+    0% {
+        top: -41%;
+    }
+    100% {
+        top: 41%
+    }
+
+}
+@keyframes transparente {
+     from {
+         background-color: transparent;
+     }
+     to {
+         background-color: #ffffff;
+     }
+}

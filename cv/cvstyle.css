@@ -1,0 +1,53 @@
+
+body {
+    background-image: linear-gradient( 180deg, lightyellow, rgb(184, 221, 184));
+}
+
+.encabezado__foto {
+    margin: 1cm 1cm 1cm 3cm;
+    float: left;
+    border: solid  black;
+}
+.encabezado__nombre {
+    text-align: center;
+    font-size: 40px;
+    text-decoration: underline;
+    display: inline-block;  
+    margin: 1cm 1cm 1cm 5.2cm;
+    position: absolute;
+    border: solid black;
+    padding: 0cm 3cm;
+    border-radius: 25px;
+}
+   
+.encabezado__datos{
+    position: relative;
+    top: 8px;
+    right: 16px;
+    font-size: 20px;
+    margin: 1cm 1cm 1cm 1cm;
+    float: right;
+}
+
+.sub{
+    text-align: center;
+    background-color:mediumaquamarine;
+    clear: both;
+    
+}
+
+.experiencias__compani123 {
+    margin:0cm 2.99cm 0cm 2.99cm ;
+    display: inline-block;
+    transition: box-shadow 0.3s 0.2s, transform 0.3s 0.2s;
+   
+} 
+
+.experiencias__compani123:hover{
+    box-shadow: 5px 5px 5px;
+    transform: scale(1.05);
+}
+
+
+
+
