@@ -5,16 +5,24 @@ html,body,main{
 
 
 .calculatorHeader{
-    height: 36px;
     background-color: rgb(184, 174, 174);
-    width: 100%;
     border-radius: 3px 3px 0px 0px;
+    
 }
 
 .mybuttons{
+    display: flex;
     border: none;
     width: 50px;
     border-radius: none ;
+    justify-items: center;
+    justify-content: center;
+    height: 48px;
+    
+}
+
+.mybuttonfixed{
+    padding-top: 12px;
 }
 
 .screen{

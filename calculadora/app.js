@@ -32,7 +32,7 @@ equalsButton.addEventListener('click', function(){
 function addopera(op){
     if (opeact === '') return;
     if (opeprev !== ''){
-        calcular()
+        calculate()
     }
     operation = op.toString();
     opeprev = opeact;
