@@ -9,4 +9,8 @@ class casa extends construccion {
         }
 }
 
+const qtaPaola = new casa(12, 25, 3, 'El junquito, KM12, Calle Esmeralda 1', '50m', '50m', '70m', 4, 3, 1);
+
+console.log(qtaPaola.getAnchoDelTerreno())
+
 module.exports = casa

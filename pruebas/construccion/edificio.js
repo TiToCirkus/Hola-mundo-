@@ -9,4 +9,9 @@ class edificio extends contruccion {
         }
 }
 
+const alejandria = new edificio(8,16,8, 'mosquera', '80m', '40m', '50m', 25, 1, 25)
+
+alejandria.modDireccion('caracas')
+console.log(alejandria)
+
 module.exports = edificio
