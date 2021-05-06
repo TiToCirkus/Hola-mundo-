@@ -10,6 +10,36 @@
 // Uso de clases e instancias.
 // EcmaScript 6
 // Repo en Github (Github pages es un plus)
-let PokeInfo = ()=>{
-    
+const axios = require('axios')
+const URL = 'https://pokeapi.co/api/v2/pokemon/'
+
+
+
+let PokeInfo = (POKID) => {
+    axios.get(`${URL}${POKID}`)
+        .then(response => {
+            const pokemon = {
+                nombre: response.data.name,
+                tipoS: response.data.types.map(tipo => tipo.type.name),
+                UrlImage: response.data.sprites.front_default,
+            }
+            console.log(pokemon)
+        })
+        .catch(error => {
+            console.log(error)
+        })
+
 }
+
+let PokeFind = (limit) => {
+    for (let i = 1; i <= limit; i++) {
+        PokeInfo(i)
+    }
+}
+
+PokeFind(3)
+
+
+
+
+
